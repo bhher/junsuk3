@@ -11,7 +11,7 @@ public class MethodEx01 {
 
     //private 접근제어자 - MethodEx01 안에서만 호출 할 수 있다.
     //private 대신 public이 많이 쓰임
-    public static void hello() {]
+    public static void hello() {
         //static - 객체 생성 없이 호출가능
         //void 리턴값이 없을때 
         System.out.println("안녕하세요");
