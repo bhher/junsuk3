@@ -72,6 +72,17 @@ public class User {
         reservationNumbers.clear();
         // 예매번호 초기화
     }
+    public void removeReservationsBymovie(String title) {
+        for(int i = reservedMovies.size()-1;i>=0;i--){
+            if(reservedMovies.get(i).equals(title)){
+                reservedMovies.remove(i);
+                reservedSeats.remove(i);
+                reservationNumbers.remove(i);
+            }
+       }
+       
+        // reservedMovies.removeIf(movie -> movie.equals(title)); 가장깔끔
+    }
 
     
 }

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- addEventListener() -->
+<!-- 이벤트 객체(event) -->
+<button id="btn">클릭</button>
+<button id="btn1">클릭</button>
+<button id="btn2">버튼2</button>
+<script>
+   const btn = document.getElementById("btn");
+
+    btn.addEventListener("click",function(event){
+        console.log(event);
+    });
+
+     const btn1 = document.getElementById("btn1");
+
+    btn1.addEventListener("click",function(e){
+        //console.log(e.target);
+      
+        //<button id="btn1">클릭</button>
+        //  console.log(e.target.innerHTML); 클릭
+         //   console.log(this) -> 화살표함수에서 쓰지 않는다.
+    });
+
+   const btn2 = document.getElementById("btn2");
+
+    btn2.addEventListener("click",(e)=>{
+        console.log(e.target); //실제 클릭한 요소
+        console.log(e.currentTarget); //이벤트가 등록된요소
+
+    });
+
+
+</script>
+</body>
+</html>
