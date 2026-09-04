@@ -15,10 +15,10 @@ $(function(){
 
         if(sct >=2500){
             $('.s4_1 ').addClass('active');
-            setTimeout(function(){
+            setTimeout(function(){//0.4 초후 addClass 'on' 을 한 번 만 실행
                   $('.s4_2 ').addClass('active');
             },400);
-               setTimeout(function(){
+               setTimeout(function(){//
                   $('.s4_3 ').addClass('active');
             },800);
             setTimeout(function(){
