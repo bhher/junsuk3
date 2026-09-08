@@ -20,14 +20,14 @@ $(window).resize(function(){ //브라우저 사이즈 변경시
 
 
 $('.nav ul').hover(function(){
-    $(this).addClass('over');
+    $(this).addClass('over'); //54px -> 185px
 },function(){
-    $(this).removeClass("over");
+    $(this).removeClass("over"); //185 -> 54px
 })    
 
 // 탭버튼 클릭스 모바일 메뉴 나오기
 $('.mobile_tab').click(function(){
-    $('.mobile_nav').addClass('active');
+    $('.mobile_nav').addClass('active'); //-220px ->0 모바일네비 나오기
     $('.transparency').addClass('active');
 	$('.container').addClass('active');
 	return false;	
